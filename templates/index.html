@@ -12,22 +12,23 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #d7f3f3;
+            background-color: #FFF8DC;
         }
 
         .container {
-            width: 80%;
-            max-width: 900px;
+            width: 100%;
+            max-width: 1200px;
             padding: 20px;
-            background-color: #cdeeee;
-            border: 2px solid #a2d7d7;
+            background-color: #DEB887;
+            border: 2px solid #D2691E;
             border-radius: 10px;
+            margin: 0 auto; 
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             font-size: 1.6em;
-            color: #333;
+            color: #8B4513;
             text-align: center;
             margin-bottom: 15px;
         }
@@ -69,7 +70,7 @@
         .scan-button {
             width: 100%;
             padding: 15px;
-            background-color: #f85353;
+            background-color: #D2691E;
             color: white;
             font-weight: bold;
             font-size: 1em;
@@ -80,7 +81,7 @@
         }
 
         .scan-button:hover {
-            background-color: #e12e2e;
+            background-color: #B8860B;
         }
     </style>
 </head>
@@ -90,7 +91,7 @@
         <p>Découvrez-le dès maintenant ! Entrez simplement vos informations ci-dessous, et nous analyserons des milliers de bases de données piratées pour voir si elles correspondent à vos données.</p>
         <form action="/submit" method="POST" class="form-grid">
             <div>
-                <label for="prenom">Votre Prénom :</label>
+                <label for="prenom">Votre nom complet :</label>
                 <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
             </div>
             <div>

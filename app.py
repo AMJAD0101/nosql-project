@@ -198,8 +198,8 @@ def stats():
         colors = plt.cm.Set2.colors
 
         # Créer le tableau de bord
-        fig, axs = plt.subplots(2, 2, figsize=(15, 10))
-        fig.suptitle("Statistiques globales", fontsize=18, color="Crimson", fontweight="bold", ha='center')
+        fig, axs = plt.subplots(2, 2, figsize=(18, 12))
+        fig.suptitle("Statistiques globales", fontsize=18, color="#8B4513", fontweight="bold", ha='center')
 
         # Affichage des métriques clés
         fig.text(0.2, 0.9, f"Total des saisies : {total_fraudes}", fontsize=12, fontweight="bold", color="Black")
@@ -312,8 +312,8 @@ def stats_jours():
         most_affected_banque = max(banque_counts, key=banque_counts.get)
 
         # Générer le tableau de bord
-        fig, axs = plt.subplots(2, 2, figsize=(15, 10))
-        fig.suptitle("Statistiques (24h)", fontsize=18, color="Crimson", fontweight="bold", ha='center')
+        fig, axs = plt.subplots(2, 2, figsize=(18, 12))
+        fig.suptitle("Statistiques (24h)", fontsize=18, color="#8B4513", fontweight="bold", ha='center')
 
         fig.text(0.2, 0.9, f"Total des saisies (24h) : {total_saisies}", fontsize=12, fontweight="bold", color="Black")
         fig.text(0.6, 0.91, f"Banque la Plus Touchée : {most_affected_banque} ", fontsize=12, fontweight="bold", color="Black")

@@ -9,10 +9,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #DEB887;
         }
         .container {
-            max-width: 1200px;
+            max-width: 2000px;
             margin: 20px auto;
             padding: 20px;
             background: #fff;
@@ -36,18 +36,32 @@
             text-align: center;
             margin-top: 20px;
         }
-        .links a {
+        .a {
             display: inline-block;
             margin: 10px;
             padding: 10px 20px;
             color: #fff;
-            background-color: #007BFF;
+            background-color: #D2691E;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-        .links a:hover {
-            background-color: #0056b3;
+        .a:hover {
+            background-color: #B8860B;
+        }
+
+        .a1 {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #800000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .a1:hover {
+            background-color: #B22222;
         }
     </style>
 </head>
@@ -61,8 +75,8 @@
             {% endif %}
         </div>
         <div class="links">
-            <a href="/">Retour au formulaire</a>
-            <a href="/stats">Voir les statistiques globales</a>
+            <a href="/" class="a">Retour au formulaire</a>
+            <a href="/stats" class="a1">Voir les statistiques globales</a>
         </div>
     </div>
 </body>
