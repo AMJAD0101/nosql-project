@@ -1,0 +1,2 @@
+docker-compose = les modifications sont faites en live 
+docker-compose-prod = les modifications ne sont pas faite en live 

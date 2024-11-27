@@ -1,0 +1,31 @@
+services:
+  app:
+    build: .
+    container_name: my_flask_app
+    volumes:
+      - .:/app
+    ports:
+      - "5001:5000"
+    depends_on:
+      - mongo
+      - redis
+
+  mongo:
+    image: mongo
+    container_name: my_mongo_db
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  redis:
+    image: redis
+    container_name: my_redis_server
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  mongo_data:
+  redis_data:

