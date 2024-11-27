@@ -5,12 +5,12 @@ Mini Projet NoSQL avec MongoDB, Redis et Docker Compose
 Ce projet illustre une application web simple qui collecte des données utilisateur via un formulaire et les stocke dans deux systèmes de stockage différents : MongoDB et Redis. L'objectif est de démontrer l'utilisation des technologies NoSQL et de mettre en œuvre la persistance et la visualisation des données collectées.
 
 # Le projet inclut 
-    - La persistance des données utilisateur de manière sécurisée dans MongoDB et Redis.
-    - La génération de statistiques :
-        *   À partir de MongoDB pour des données globales.
-        *   À partir de Redis pour les données des dernières 24 heures.
-    - L'affichage convivial des données collectées et des statistiques via une interface web.
-    - Un environnement Dockerisé pour faciliter le déploiement et l'utilisation.
+- La persistance des données utilisateur de manière sécurisée dans MongoDB et Redis.
+- La génération de statistiques :
+    *   À partir de MongoDB pour des données globales.
+    *   À partir de Redis pour les données des dernières 24 heures.
+- L'affichage convivial des données collectées et des statistiques via une interface web.
+- Un environnement Dockerisé pour faciliter le déploiement et l'utilisation.
 
 ## Fonctionnalités
 
@@ -54,18 +54,18 @@ cd <répertoire-du-projet>
 ```
 
 2. Générer une clé de chiffrement
-    -   Exécutez le script suivant pour générer une clé de chiffrement sécurisée:
+*    Exécutez le script suivant pour générer une clé de chiffrement sécurisée:
 ```bash
 python3 generate_key.py
 ```
-    -   Cela génère un fichier secret.key dans le répertoire du projet.
+*    Cela génère un fichier secret.key dans le répertoire du projet.
 
 3. Démarrer les conteneurs Docker
-    -   Pour lancer l'application en mode développement :
+*    Pour lancer l'application en mode développement :
 ```bash
 docker-compose up --build
 ```
-    -   Pour lancer l'application en mode production :
+*    Pour lancer l'application en mode production :
 ```bash
 docker-compose -f docker-compose.prod.yml up --build
 ```
@@ -122,9 +122,9 @@ docker-compose -f docker-compose.prod.yml up --build
 1. Clonez le projet sur votre serveur distant.
 2. Assurez-vous que Docker et Docker Compose sont installés.
 3. Lancez les conteneurs en mode production :
-```bash
-docker-compose -f docker-compose-prod.yml up
-```
+    ```bash
+    docker-compose -f docker-compose-prod.yml up
+    ```
 
 
 
