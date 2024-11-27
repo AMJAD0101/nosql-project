@@ -1,5 +1,5 @@
 # nosql-project
-Mini Projet NoSQL avec MongoDB, Redis et Docker Compose
+Mini Projet NoSQL avec MongoDB, Redis et Docker
 
 ## Description
 Ce projet illustre une application web simple qui collecte des données utilisateur via un formulaire et les stocke dans deux systèmes de stockage différents : MongoDB et Redis. L'objectif est de démontrer l'utilisation des technologies NoSQL et de mettre en œuvre la persistance et la visualisation des données collectées.
